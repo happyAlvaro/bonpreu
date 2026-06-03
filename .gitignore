@@ -1,0 +1,11 @@
+node_modules
+dist
+client/dist
+server/dist
+*.tsbuildinfo
+client/vite.config.js
+client/vite.config.d.ts
+.DS_Store
+.env
+server/.env
+npm-debug.log*

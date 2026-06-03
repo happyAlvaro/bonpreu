@@ -1,0 +1,24 @@
+{
+  "name": "bonpreu-voice-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc -b"
+  },
+  "dependencies": {
+    "@happyrobot-ai/sdk": "latest",
+    "@vitejs/plugin-react": "latest",
+    "livekit-client": "^2.19.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

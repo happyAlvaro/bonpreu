@@ -1,0 +1,100 @@
+:root {
+  background: #ffffff;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #ffffff;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.exact-page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.bonpreu-canvas {
+  position: relative;
+  width: 100vw;
+  max-width: none;
+}
+
+.bonpreu-canvas img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+
+.voice-overlay {
+  position: absolute;
+  right: 2%;
+  bottom: 6%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.voice-button {
+  min-width: clamp(78px, 7.4vw, 250px);
+  height: clamp(28px, 2.55vw, 86px);
+  padding: 0 clamp(14px, 1.3vw, 44px);
+  border: 0;
+  border-radius: 999px;
+  background: #31573d;
+  color: #ffffff;
+  font-size: clamp(11px, 1.02vw, 34px);
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 18%);
+}
+
+.voice-button:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+
+.voice-button.secondary {
+  background: #f4b02f;
+  color: #111111;
+}
+
+.voice-button.end {
+  background: #9e2424;
+}
+
+.voice-error {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  width: clamp(220px, 22vw, 650px);
+  margin: 0;
+  padding: 7px 9px;
+  border: 1px solid #e3b9b9;
+  border-radius: 4px;
+  background: #fff8f8;
+  color: #9e2424;
+  font-size: clamp(11px, 0.95vw, 28px);
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 10%);
+  transform: translateX(-50%);
+}
